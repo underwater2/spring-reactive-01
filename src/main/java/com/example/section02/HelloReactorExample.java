@@ -1,4 +1,4 @@
-package com.example.section02.class01;
+package com.example.section02;
 
 import com.example.utils.Logger;
 import reactor.core.publisher.Flux;
