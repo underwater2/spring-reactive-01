@@ -6,7 +6,7 @@ import reactor.core.publisher.Sinks;
 
 public class SinkManyExample02 {
     public static void main(String[] args) {
-        //multicast(): 하나 이상의 Subscriber에게만 데이터를 emit할 수 있다.
+        //multicast(): 하나 이상의 Subscriber에게 데이터를 emit할 수 있다.
         Sinks.Many<Integer> multicastSink = Sinks.many().multicast().onBackpressureBuffer();
         Flux<Integer> fluxView = multicastSink.asFlux();
 
